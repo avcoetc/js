@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		JavaScript function to find
+		the area of a rectangle
+	</title>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: green;">
+		E&TC Department AVCOE
+	</h1>
+
+	<h4>
+		JavaScript function to find
+		the area of a rectangle
+	</h4>
+
+	<label for="Length">
+		Enter the value of Length:
+	</label>
+	
+	<input type="number" id="Length" placeholder="Enter value of Length">
+	<br><br>
+
+	<label for="Width">
+		Enter the value of Width:
+	</label>
+	
+	<input type="number" id="Width" placeholder="Enter value of Width">
+	<br><br>
+	
+	<button onclick="Area()">Click Here!</button>
+
+	<p>
+		Area of Rectangle: <span id="display"></span>
+	</p>
+
+	<script type="text/javascript">
+		function Area() {
+			var Length = parseInt(document.getElementById("Length").value);
+			var Width = parseInt(document.getElementById("Width").value);
+			console.log(typeof(side1));
+			var Area = (Length * Width) ;
+			document.getElementById("display").innerHTML = Area;
+		}
+	</script>
+</body>
+</html>
